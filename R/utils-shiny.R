@@ -112,7 +112,7 @@ make_success_alert <- function(data,
     )
   } else {
     success_message <- tagList(
-      tags$b(phosphoricons::ph("check", weight = "bold"), i18n("Data successfully imported!")),
+      tags$b(phosphoricons::ph("check", weight = "bold"), i18n("Data Successfully Uploaded! Click on Import Data.")),
       sprintf(
         i18n("data has %s obs. of %s variables."),
         nrow(data), ncol(data)
